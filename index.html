@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site com Parallax</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    .parallax {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .parallax-text {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .content {
+      height: 400px;
+      background-color: white;
+      padding: 40px;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax">
+    <div class="parallax-text">Bem-vindo ao Parallax</div>
+  </div>
+
+  <div class="content">
+    <h2>Seção de Conteúdo</h2>
+    <p>Esse é um exemplo simples de um site com efeito parallax. Ao rolar a página, a imagem de fundo cria uma sensação de profundidade.</p>
+  </div>
+
+  <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1350&q=80');">
+    <div class="parallax-text">Outra Imagem</div>
+  </div>
+
+  <div class="content">
+    <h2>Mais conteúdo</h2>
+    <p>Continue adicionando seções para criar um site longo com efeito parallax entre elas.</p>
+  </div>
+
+</body>
+</html>
